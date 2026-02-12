@@ -1,0 +1,13 @@
+services:
+  crowdsec:
+    image: crowdsecurity/crowdsec
+    container_name: crowdsec
+    restart: always
+    environment:
+      - COLLECTIONS=${COLLECTIONS}
+      - EVIL_BIT_BUCKET=true
+    volumes:
+      - ./config:/etc/crowdsec
+      - ./data:/var/lib/crowdsec/data
+      - /logs/npm:/var/log/nginx:ro
+    network_mode: host
