@@ -1,11 +1,11 @@
 filenames:
-  - /var/log/nginx/default-host_access.log
-  - /var/log/nginx/default-host_error.log
-  - /var/log/nginx/fallback_http_access.log
-  - /var/log/nginx/fallback_http_error.log
-  - /var/log/nginx/fallback_error.log
-  - /var/log/nginx/fallback_stream_access.log
-  - /var/log/nginx/proxy-host-*_access.log
-  - /var/log/nginx/proxy-host-*_error.log
+  - /var/log/npm/default-host_access.log
+  - /var/log/npm/default-host_error.log
+  - /var/log/npm/fallback_http_access.log
+  - /var/log/npm/fallback_http_error.log
+  - /var/log/npm/fallback_error.log
+  - /var/log/npm/fallback_stream_access.log
+  - /var/log/npm/proxy-host-*_access.log
+  - /var/log/npm/proxy-host-*_error.log
 labels:
-  type: nginx
+  type: nginx-proxy-manager
