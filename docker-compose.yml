@@ -11,7 +11,7 @@ services:
       - ./config:/etc/crowdsec
       - data:/var/lib/crowdsec/data
       - /logs/npm:/var/log/npm:ro
-      - ./acquis.d:/etc/crowdsec/acquis.d
+      - ./acquis.d:/etc/crowdsec/acquis.d:ro
     network_mode: host
 
 volumes:
